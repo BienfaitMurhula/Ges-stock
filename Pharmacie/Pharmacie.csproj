@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6065C2A6-06BF-4EF2-8D13-35795E857224}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pharmacie</RootNamespace>
+    <AssemblyName>Pharmacie</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_Espresso_Cup.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A1E652893737D852FBEB897F9DA127D0419A2AD9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Pharmacie_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>E:\librairies\Dll\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Guna.UI">
+      <HintPath>E:\librairies\Dll\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aide.Designer.cs">
+      <DependentUpon>Aide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connexion\ClsConnect.cs" />
+    <Compile Include="connexion\ClsConstantes.cs" />
+    <Compile Include="connexion\Connexion.cs" />
+    <Compile Include="connexion\fonction.cs" />
+    <Compile Include="connexion\PubCon.cs" />
+    <Compile Include="dialogues\AjoutArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogues\AjoutArticle.Designer.cs">
+      <DependentUpon>AjoutArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogues\AjoutEntree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogues\AjoutEntree.Designer.cs">
+      <DependentUpon>AjoutEntree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogues\AjoutFamille.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogues\AjoutFamille.Designer.cs">
+      <DependentUpon>AjoutFamille.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogues\AjoutFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogues\AjoutFournisseur.Designer.cs">
+      <DependentUpon>AjoutFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogues\AjoutIventaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogues\AjoutIventaire.Designer.cs">
+      <DependentUpon>AjoutIventaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogues\AjoutSortie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogues\AjoutSortie.Designer.cs">
+      <DependentUpon>AjoutSortie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogues\FrmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogues\FrmConfig.Designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogues\Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogues\Restore.Designer.cs">
+      <DependentUpon>Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogues\Sauvegarder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogues\Sauvegarder.Designer.cs">
+      <DependentUpon>Sauvegarder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogues\Verification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogues\Verification.Designer.cs">
+      <DependentUpon>Verification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Articles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\Articles.Designer.cs">
+      <DependentUpon>Articles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Compte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\Compte.Designer.cs">
+      <DependentUpon>Compte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Entree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\Entree.Designer.cs">
+      <DependentUpon>Entree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Famille.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\Famille.Designer.cs">
+      <DependentUpon>Famille.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Fournisseur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\Fournisseur.Designer.cs">
+      <DependentUpon>Fournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Inventaire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\Inventaire.Designer.cs">
+      <DependentUpon>Inventaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Parametre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\Parametre.Designer.cs">
+      <DependentUpon>Parametre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Sortie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\Sortie.Designer.cs">
+      <DependentUpon>Sortie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Synthese.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\Synthese.Designer.cs">
+      <DependentUpon>Synthese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacieDataSet.cs">
+      <DependentUpon>PharmacieDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacieDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacieDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Preload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preload.Designer.cs">
+      <DependentUpon>Preload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rapport\ListeAdticles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapport\ListeAdticles.Designer.cs">
+      <DependentUpon>ListeAdticles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\ListeEntree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapport\ListeEntree.Designer.cs">
+      <DependentUpon>ListeEntree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\ListeFamille.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapport\ListeFamille.Designer.cs">
+      <DependentUpon>ListeFamille.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\ListeFss.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapport\ListeFss.Designer.cs">
+      <DependentUpon>ListeFss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\ListeSortie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapport\ListeSortie.Designer.cs">
+      <DependentUpon>ListeSortie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\Liste_rangee.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapport\Liste_rangee.Designer.cs">
+      <DependentUpon>Liste_rangee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport\RapportInventaire.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapport\RapportInventaire.Designer.cs">
+      <DependentUpon>RapportInventaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="traitement\Traitement.cs" />
+    <EmbeddedResource Include="Aide.resx">
+      <DependentUpon>Aide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogues\AjoutArticle.resx">
+      <DependentUpon>AjoutArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogues\AjoutEntree.resx">
+      <DependentUpon>AjoutEntree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogues\AjoutFamille.resx">
+      <DependentUpon>AjoutFamille.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogues\AjoutFournisseur.resx">
+      <DependentUpon>AjoutFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogues\AjoutIventaire.resx">
+      <DependentUpon>AjoutIventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogues\AjoutSortie.resx">
+      <DependentUpon>AjoutSortie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogues\FrmConfig.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogues\Restore.resx">
+      <DependentUpon>Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogues\Sauvegarder.resx">
+      <DependentUpon>Sauvegarder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogues\Verification.resx">
+      <DependentUpon>Verification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Articles.resx">
+      <DependentUpon>Articles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Compte.resx">
+      <DependentUpon>Compte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Entree.resx">
+      <DependentUpon>Entree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Famille.resx">
+      <DependentUpon>Famille.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Fournisseur.resx">
+      <DependentUpon>Fournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Inventaire.resx">
+      <DependentUpon>Inventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Parametre.resx">
+      <DependentUpon>Parametre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Sortie.resx">
+      <DependentUpon>Sortie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Synthese.resx">
+      <DependentUpon>Synthese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preload.resx">
+      <DependentUpon>Preload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rapport\ListeAdticles.resx">
+      <DependentUpon>ListeAdticles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\ListeEntree.resx">
+      <DependentUpon>ListeEntree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\ListeFamille.resx">
+      <DependentUpon>ListeFamille.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\ListeFss.resx">
+      <DependentUpon>ListeFss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\ListeSortie.resx">
+      <DependentUpon>ListeSortie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\Liste_rangee.resx">
+      <DependentUpon>Liste_rangee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport\RapportInventaire.resx">
+      <DependentUpon>RapportInventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="PharmacieDataSet.xsc">
+      <DependentUpon>PharmacieDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacieDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacieDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacieDataSet.xss">
+      <DependentUpon>PharmacieDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Pharmacie_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_Espresso_Cup.ico" />
+    <Content Include="img\1Minimize.png" />
+    <None Include="img\aide.jpg" />
+    <Content Include="img\filesaveas_004.png" />
+    <Content Include="img\icons8_Espresso_Cup.ico" />
+    <Content Include="img\LOGO LOGO.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

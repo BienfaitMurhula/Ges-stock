@@ -1,0 +1,10 @@
+Bienvenue dans l'assistant de l'installation de notre logiciel de gestion de la pharmacie
+Ce logiciel est la premiere version, concu par Solu-Tech pour la gestion de stock.
+Ce logiciel est un produit bien synthetiser pour gerer tout type de stock au sein de la pharmacie en vue d'en tirer un benefice.
+Nous constinuons pour l'amelioration de ce produit pour sortir une nouvelle version et de corriger tous les bugs qui pourraient re retrouver dans ce logiciel.
+
+Pour toutes questions et suggestions veuillez nous contacter au:
+Telephone  : +243 978167647
+	  : +243 846920838
+Email	  : bienfaitmurhula.122@gmail.com
+	    solutechinnovation@gmail.com
